@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo 1</title>
+</head>
+<style>
+    body{
+        background: url(bg_texture.gif);
+    }
+    div {
+        float: left;
+    }
+    #img1{				
+        opacity: 1;
+    }
+    #img2{				
+        opacity: .5;
+    }
+    #img3{				
+        opacity: .2;
+    }
+    body{
+background:#666;
+}
+#botonera{
+width:98%;
+margin:10px auto;
+height:60px;
+background:none;
+background-clip: padding-box;     
+-moz-background-clip: padding;     
+-webkit-background-clip: padding;  
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius:10px; 
+border: 10px solid rgba(255,255,255,0.3);
+}
+#botonera-2{
+border-radius:3px;
+width:100%;
+height:60px;
+margin:0px;
+background:linear-gradient(#CCC 0%, #333 100%);
+background:-moz-linear-gradient(#CCC 0%, #333 100%);
+background:-ms-linear-gradient(#CCC 0%, #333 100%);
+background:-o-linear-gradient(#CCC 0%, #333 100%);
+background:-webkit-linear-gradient(#CCC 0%, #333 100%);
+}
+menu{
+display:inline-block;
+width:100px;
+text-align:center;
+margin:10px auto;
+background:none;
+color:#fff;
+font:bold;
+padding:10px;
+}
+menu:hover{
+background:-moz-linear-gradient(#FFF 0%, #C4C4C4 100%);
+background:linear-gradient(#FFF 0%, #DEDEDE 100%);
+background:-ms-linear-gradient(#FFF 0%, #DEDEDE 100%);
+background:-o-linear-gradient(#FFF 0%, #DEDEDE 100%);
+background:-webkit-linear-gradient(#FFF 0%, #DEDEDE 100%);
+opacity:0.6;
+-moz-opacity:0.6;
+-o-opacity:0.6;
+-webkit-opacity:0.6;
+-ms-opacity:0.6;
+border-radius:5px;
+color:red;
+box-shadow:0 0 10px #FFf;
+-moz-box-shadow:0 0 10px #FFf;
+-ms-box-shadow:0 0 10px #FFf;
+-o-box-shadow:0 0 10px #FFf;
+-webkit-box-shadow:0 0 10px #FFf;
+}
+#buscar{
+background:#fff;
+border-bottom-left-radius:10px;
+border-top-left-radius:10px;
+border-right:0px;
+border:solid 0px #DEDEDE;
+color:#999;
+padding:6px;
+width:150px;
+position:relative;
+display:inline-block;
+margin-left:50px;
+margin-top:15px;
+vertical-align:top;
+
+}
+
+#buscar:focus{
+box-shadow:0 0 15px #09F;
+-moz-box-shadow:0 0 15px #09F;
+-ms-box-shadow:0 0 15px #09F;
+-o-box-shadow:0 0 15px #09F;
+-webkit-box-shadow:0 0 15px #09F;
+}
+#submit{
+padding:5px;
+width:70px;
+margin-top:15px;
+border-bottom-right-radius:10px;
+border-top-right-radius:10px;
+display:inline-block;
+position:absolute;
+border:0px;
+background:url(buscar.png);
+vertical-align:top;
+}
+
+div.otro { background: orange;
+border-style: solid;
+border-width: 5px;
+padding: 10px 10px;
+
+}
+
+P.UNO { background: yellow;
+border-style:double;
+border-width:medium;
+}
+
+P.DOS {
+background: yellow;
+border-style: double;
+border-width: medium;
+}
+</style>
+
+<body>
+    <header>
+        <div id="img1"><img src="foto1.jpg" width="30" height="45" /></div>
+		<div id="img2"><img src="foto1.jpg" width="30" height="45" /></div>
+		<div id="img3"><img src="foto1.jpg" width="30" height="45" /></div>
+        <h3>William Ruiz garcia</h2>
+        
+    </header>
+    <nav>
+        <menu>Home</menu>
+        <menu>Noticias</menu>
+        <menu>Facebook</menu>
+        <menu>Twitter</menu>
+        <input placeholder="Buscar... "type="search" name="buscar" id="buscar"/>
+        <input type="submit" value="Buscar" id="submit" /> 
+    </nav>
+    <section id="contenedor">
+        <section id="principal">
+            Perfil Profesional
+        <article>
+           <div class=otro>
+           <p class="UNO">
+            <ul>
+               <li>Ingeniero de sistemas</li>
+               <li>habilidades en redes</li>
+               <li> plataforma Unix, Linux</li>
+               <li> Novell</li>
+               <li> Windows 2003, Nt.</li>
+               <li>Gestion de Bases de datos</li>
+               <li>lenguajes de programacion</li>
+               <li>Power Builder</li>
+               <li>Visual Basic</li>
+               <li>Visual Foxpro</li>
+               <li>lenguaje C</li>
+               <li>Docencia en cada una de estas especialidades</li>
+            </p>
+        </article>
+        
+    </section>
+    
+    <section id="contenedor">
+        <section id="principal">
+            Experiencia Laboral
+        <article>
+           <p class="dos">
+            <ol>
+              <li>Ambientes Virtuales de Aprendizaje.</li>
+              <li>Supervision de convenios de ampliacion de cobertura, direccion regional valle</li>
+              <li>Supervision de contratistas del Centro de Gestion Tecnologica de Servicios,Regional Valle</li><li>Docente de sistemas Fundacion la 14</li><br>
+              <hr></p>
+            </div>  
+              Registro de datos
+ 			 <form id="formulario1">
+		  <fieldset form="formulario1" name="fieldset1">
+			<legend>Controles Independientes</legend>
+			<p>
+				<label>Securtiy:</label>
+				<keygen name="security" keytype="rsa" challenge="letmein" />
+				<label>(este control requiere trabajar con otro control de manera paralela)</label>
+				
+			</p>
+
+			<p>
+				<label>meter:</label><br/>
+				<meter value="2" min="0" max="10">2 de 10</meter><br/>
+				<meter value="0.6">60%</meter>
+			</p>
+			<p>
+				<label>progress:</label><br/>
+				<progress value="25" max="100">
+				</progress>
+			</p>
+		  </fieldset>
+		  <fieldset form="formulario1" name="fieldset2">
+			<legend>Controles tipo Input</legend>
+			<p>
+				email: <input type="email" name="user_email" autofocus />
+				<label>*Coloque dato inv&aacute;lido y utilice el bot&oacute;n "Enviar"</label>
+			</p>
+			<p>
+				number: <input type="number" name="no_number" min="1" max="10" />
+			</p>
+
+			<p>
+				range: <input type="range" name="no_range" min="1" max="10" />
+			</p>
+			<p>
+				search: <input type="search" name="user_search" placeholder="campo de busqueda" />
+			</p>
+			<p>
+				tel: <input type="tel" name="user_mobile" />
+				<label>(este control requiere trabajar con alg&uacute;n script de cliente o servidor)</label>
+			</p>
+			<p>
+				url: <input type="url" name="user_url" />
+				<label>*Coloque dato inv&aacute;lido y utilice el bot&oacute;n "Enviar" (En el campo email debe haber un dato correcto y ya validado)</label>
+			</p>
+		  </fieldset>
+
+		  <input type="submit" />
+		</form>
+        </article>
+        
+    </section>
+    
+        <aside>
+        <audio controls="controls">
+			<source src="audio1.mp3" />
+			Su navegador no soporta el elemento audio
+		</audio>
+
+        </aside>
+        <section>
+        
+        <video controls="controls">
+			
+			<source src="siberian_husky.mp4" />
+			Su navegador no soporta el elemento video
+		</video>
+
+        
+        </section>
+        
+        
+    </section>
+    <footer>
+    <object width="245" height="90"><param name="allowscriptaccess" value="always" /><param name="movie" value="http://static.radionomy.com/cdn/flash/BannerEmbed.swf?RadUID=240d9432-d8d8-4444-b4c7-f55697c5f503&amp;titlesColor=ffffff&amp;color=7d7d7d&amp;autoPlay=yes&amp;lang=es" /><param name="wmode" value="transparent" /><embed src="http://static.radionomy.com/cdn/flash/BannerEmbed.swf?RadUID=240d9432-d8d8-4444-b4c7-f55697c5f503&amp;titlesColor=ffffff&amp;color=7d7d7d&amp;autoPlay=yes&amp;lang=es" wmode="transparent" type="application/x-shockwave-flash" allowscriptaccess="always" width="245" height="90"></embed></object>
+
+       <hr><br> Este es el pie de nuestra p&aacute;gina
+   
+</body>
+<h1>Pagina principal de prueba </h1>
+<h2>Instructor William Ruiz</h2>
+<br><br><br><p>Contenido principal de trabajo en formato html</p>
+<li> Lista de contenido <hr widt=50%>lista dos 
+</li>
+</html>
